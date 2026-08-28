@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
   }else if (req.url === '/api/users' && req.method === 'GET') {
     const users = [
       { id: 1, name: "Ali", role: "Developer" },
-      { id: 1, name: "Sara", role: "Designer" }
+      { id: 2, name: "Sara", role: "Designer" }
     ];
     res.statusCode = 200;
     res.end(JSON.stringify(users));
