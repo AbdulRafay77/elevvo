@@ -41,13 +41,13 @@ const loginLimiter = rateLimit({
 
 // 2. MOCK DATABASE & INITIAL SEEDING
 
-const userDB = [];
+const usersDB = [];
 
 const seedDatabase = async () => {
   const userPasswordHash = await bcrypt.hash('user123', 10);
   const adminPasswordHash = await bcrypt.hash('admin123', 10);
 
-  userDB.push(
+  usersDB.push(
     { id: 1, email: 'user@example.com', password: userPasswordHash, role: 'USER' },
     { id: 2, email: 'admin@example.com', password: adminPasswordHash, role: 'ADMIN' }
   );
