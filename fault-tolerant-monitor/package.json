@@ -1,0 +1,12 @@
+{
+  "name": "fault-tolerant-monitor",
+  "version": "1.0.0",
+  "description": "Elevvo Backend Track - Module 3 deliverable",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/monitor.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
